@@ -20,7 +20,15 @@
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
 
+// .replace()
 
+// let text = "Visit Microsoft!";
+// let result = text.replace("Microsoft", "W3Schools");
+// .replace("replace this", "with this")
+
+// .split The split() method splits a String object into an array of strings by separating the string into sub strings. 
+
+// "I am a string" --> ["I", "a", "m", "a", "s", "t", "r", "i", "n", "g"]
 
 
 
