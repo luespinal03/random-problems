@@ -15,13 +15,6 @@
 // -->
 // "####################################man!"
 
-
-
-
-
-
-
-
 function maskify(cc) {
     // If length is greater than 4, then we have things to mask
     if (cc.length > 4) { // if cc.length is more than 4
