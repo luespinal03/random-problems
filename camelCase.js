@@ -28,7 +28,7 @@ function toCamelCase(str) {
 
 console.log(toCamelCase("the-stealth-warrior"))
 console.log(toCamelCase("The_Stealth_Warrior"))
-console.log(toCamelCase("Yo-mama_works"))
+console.log(toCamelCase("Iam-groot_iamGroot"))
 
 
 
