@@ -4,25 +4,31 @@ function toCamelCase(str) {
 
     for (i = 0; i < str.length; i++) {
 
+        if (splittedStr[i] === splittedStr[i].toUpperCase()) {
+            splittedStr[i] = splittedStr[i].toUpperCase()
+        }
+
         if (splittedStr[i] === "-" || splittedStr[i] === "_") {
+            // if the index is "-" or "_" 
 
-            splittedStr[i] = ""
-            newStr = newStr + splittedStr[i]
-            splittedStr[i + 1] = splittedStr[i + 1].toUpperCase()
+            splittedStr[i] = "" // change it into nothing ""
+            newStr = newStr + splittedStr[i] // update newStr
+            splittedStr[i + 1] = splittedStr[i + 1].toUpperCase() // the index right next to "" index, make it capital
 
-            if(splittedStr[i] === splittedStr[i].toUpperCase()){
-                splittedStr[i] = splittedStr[i].toUpperCase()
-            }
+            // if(splittedStr[i] === splittedStr[i].toUpperCase()){
+            //     splittedStr[i] = splittedStr[i].toUpperCase()
+            // }
 
         } else {
             newStr = newStr + splittedStr[i]
         }
-
     }
     return newStr
 }
 
 console.log(toCamelCase("the-stealth-warrior"))
+console.log(toCamelCase("The_Stealth_Warrior"))
+console.log(toCamelCase("Yo-mama_works"))
 
 
 
