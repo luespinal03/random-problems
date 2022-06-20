@@ -44,24 +44,36 @@ let target = 9
 
 function twoNums(input, target) {
     let total = []
-    for (let x in input) {  // "in" checks if a specified property exists in an object or in its inherited properties
+    for (let x in input) { // "in" checks if a specified property exists in an object or in its inherited properties
         for (let y in input) {
             // see if array[x] + array[y] === total
             // save successful combos to total array
             if (input[x] + input[y] === target) {
-                total.push([input[x], input[y]])
-                // if i get a successful combination, push the indexes into my total array
+                return [x, y] // return the index locations for the numbers that add to total
             }
         }
 
     }
-    return total
+    return total // [[2, 7] [7, 2]]
 }
 
 
 console.log(twoNums(input, target))
 
 
+// let nums = [2, 7, 11, 15]
+// //          0, 1,  2,  3
+// let target = 9
 
 
+// function twoSum(nums, target) {
+//     for (let i = 0; i < nums.length; i++) { // i begins checking index 0
+//         for (let j = i + 1; j < nums.length; j++) { // j begins checking index 1, will always be 1 step ahead of i
+//             if (nums[i] + nums[j] === target) {
+//                 return [i, j];
+//             }
+//         }
+//     }
+// }
 
+// console.log(twoSum(nums, target))
