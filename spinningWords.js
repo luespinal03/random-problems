@@ -7,7 +7,7 @@ function spinWords(string) {
         if (str[i].length >= 5) {
             str[i].split('').reverse().join('')
             newStr.push(str[i].split('').reverse().join(''))
-        } else if (str[i].length < 5) {
+        } else {
             newStr.push(str[i])
         }
     }
