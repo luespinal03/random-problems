@@ -7,7 +7,7 @@ function count(string) {
             // if newStr[i] is not in obj then it goes into obj and add 1 as the value
             obj[newStr[i]] += 1;
         } else {
-            // if it is in there already add a value of 1 to w.e number it has already 
+            // if it is in there already add  1 to w.e the value it has already 
             obj[newStr[i]] = 1;
 
         }
